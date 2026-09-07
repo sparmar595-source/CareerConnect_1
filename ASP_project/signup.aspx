@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="ASP_project.login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="signup.aspx.cs" Inherits="ASP_project.signup" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" runat="server" contentplaceholderid="ContentPlaceHolder2">
@@ -362,14 +362,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login | CareerConnect</title>
+    <title>Sign Up | CareerConnect</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-    <center>
+<center>
   <body>
     <div class="auth-shell">
       <header class="auth-header">
@@ -377,54 +377,75 @@
           <span class="brand-mark">C</span>
           <span>CareerConnect</span>
         </a>
-        <h1>Welcome back</h1>
-        <p>Log in to continue your job search.</p>
+        <h1>Create account</h1>
+        <p>Join CareerConnect and discover new opportunities.</p>
       </header>
 
-      <div class="auth-tabs" aria-label="Account type tabs">
-          <asp:Button ID="Button1" runat="server" Text="Student" class="tab-btn active" />
-<%--        <button class="tab-btn active" type="button">Student</button>--%>
-          <asp:Button ID="Button2" runat="server" Text="Employer" class="tab-btn" />
-<%--        <button class="tab-btn" type="button">Employer</button>--%>
+      <div class="auth-tabs" aria-label="Create account type tabs">
+
+          <asp:Button ID="Button1" runat="server" Text="Student" class="tab-btn active" type="button"/>
+          <asp:Button ID="Button2" runat="server" Text="Employer" class="tab-btn" type="button"/>
+
+       <%-- <button class="tab-btn active" type="button">Student</button>
+        <button class="tab-btn" type="button">Employer</button>--%>
       </div>
 
       <form class="auth-form">
         <div class="form-grid">
           <div class="form-field">
-              <asp:Label ID="Label1" runat="server" Text="Email address"></asp:Label>
-              <asp:TextBox ID="TextBox1" runat="server" type="email" placeholder="name@example.com"></asp:TextBox>
-
-            <%--<label for="login-email">Email address</label>
-            <input id="login-email" type="email" placeholder="name@example.com" />--%>
-
+              <asp:Label ID="Label1" runat="server" Text="Full name"></asp:Label>
+              <asp:TextBox ID="TextBox1" runat="server" type="text" placeholder="Enter your name"></asp:TextBox>
+            <%--<label for="signup-name">Full name</label>
+            <input id="signup-name" type="text" placeholder="Enter your name" />--%>
           </div>
 
           <div class="form-field">
-              <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-              <asp:TextBox ID="TextBox2" runat="server" type="password" placeholder="Enter your password"></asp:TextBox>
-            
-            <%--<label for="login-password">Password</label>
-            <input id="login-password" type="password" placeholder="Enter your password" />--%>
-
+              <asp:Label ID="Label2" runat="server" Text="Email address"></asp:Label>
+              <asp:TextBox ID="TextBox2" runat="server" type="email" placeholder="name@example.com"></asp:TextBox>
+           <%-- <label for="signup-email">Email address</label>
+            <input id="signup-email" type="email" placeholder="name@example.com" />--%>
           </div>
 
-          <div class="form-inline">
-              <asp:Label ID="Label3" runat="server" itype="checkbox" Text="Remember me"></asp:Label>
-            <%-- <label><input type="checkbox" /> Remember me</label>--%>
-            <a href="#">Forgot password?</a>
+          <div class="form-row">
+            <div class="form-field">
+                <asp:Label ID="Label3" runat="server" Text="Password"></asp:Label>
+                <asp:TextBox ID="TextBox3" runat="server" type="password" placeholder="Create password"></asp:TextBox>
+             <%-- <label for="signup-password">Password</label>
+              <input id="signup-password" type="password" placeholder="Create password" />--%>
+            </div>
+            <div class="form-field">
+                <asp:Label ID="Label4" runat="server" Text="Confirm"></asp:Label>
+                <asp:TextBox ID="TextBox4" runat="server" type="password" placeholder="Confirm password"></asp:TextBox>
+              <%--<label for="signup-confirm">Confirm</label>
+              <input id="signup-confirm" type="password" placeholder="Confirm password" />--%>
+            </div>
           </div>
 
-            <asp:Button ID="Button3" runat="server" Text="Login" class="btn btn-primary auth-submit" type="submit"/>
-<%--          <button class="btn btn-primary auth-submit" type="submit">Login</button>--%>
+          <div class="form-field">
+
+            <label>Role</label>
+            <div class="role-toggle" aria-label="Select role">
+              <label>
+                <input type="radio" name="role" checked />
+                <span>Student</span>
+              </label>
+              <label>
+                <input type="radio" name="role" />
+                <span>Employer</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn btn-primary auth-submit" type="submit">Create account</button>
 
           <p style="text-align: center; margin: 0; color: var(--text-500);">
-            Don’t have an account? <a href="signup.aspx" style="color: var(--primary-700); font-weight: 700;">Create one</a>
+            Already have an account? <a href="login.aspx" style="color: var(--primary-700); font-weight: 700;">Login</a>
           </p>
         </div>
       </form>
     </div>
   </body>
-        </center>
+</center>
 </html>
 
 </asp:Content>
@@ -478,7 +499,7 @@
 
 
 <asp:Content ID="Content4" runat="server" contentplaceholderid="ContentPlaceHolder3">
-    <%--<footer class="site-footer" id="about">
+   <%-- <footer class="site-footer" id="about">
         <div class="container footer-grid">
             <div>
                 <a href="index.html" class="brand footer-brand"><span class="brand-mark">C</span> <span>CareerConnect</span> </a>
