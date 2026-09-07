@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard | CareerConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="index.html" class="brand" aria-label="CareerConnect home">
+          <span class="brand-mark">C</span>
+          <span>CareerConnect</span>
+        </a>
+
+        <ul class="side-menu">
+          <li><a class="active" href="dashboard-student.html"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i> Jobs</a></li>
+          <li><a href="#"><i class="fa-solid fa-bookmark"></i> Saved</a></li>
+          <li><a href="#"><i class="fa-solid fa-file-lines"></i> Applications</a></li>
+          <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+        </ul>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Student Dashboard</h1>
+          <div class="user-pill">
+            <img src="https://ui-avatars.com/api/?name=Ananya+Singh&background=0ea5e9&color=fff" alt="Ananya Singh" />
+            <span>Ananya Singh</span>
+          </div>
+        </div>
+
+        <section class="stats-grid">
+          <article class="stat-card">
+            <div class="meta">
+              <span>Applications Sent</span>
+              <i class="fa-solid fa-paper-plane" style="color: var(--primary-500);"></i>
+            </div>
+            <strong>24</strong>
+            <small>+6 from last month</small>
+          </article>
+
+          <article class="stat-card">
+            <div class="meta">
+              <span>Interviews</span>
+              <i class="fa-solid fa-user-check" style="color: var(--teal-600);"></i>
+            </div>
+            <strong>08</strong>
+            <small>+2 this week</small>
+          </article>
+
+          <article class="stat-card">
+            <div class="meta">
+              <span>Saved Jobs</span>
+              <i class="fa-solid fa-bookmark" style="color: var(--warning);"></i>
+            </div>
+            <strong>17</strong>
+            <small>+4 new saves</small>
+          </article>
+        </section>
+
+        <section class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Applied</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Northstar Labs</td>
+                <td>Senior Product Designer</td>
+                <td>10 Jul 2026</td>
+                <td><span class="status-badge status-selected">Selected</span></td>
+              </tr>
+              <tr>
+                <td>CloudWorks</td>
+                <td>Customer Success Manager</td>
+                <td>12 Jul 2026</td>
+                <td><span class="status-badge status-interview">Interview</span></td>
+              </tr>
+              <tr>
+                <td>Signal Studio</td>
+                <td>UX Research Intern</td>
+                <td>16 Jul 2026</td>
+                <td><span class="status-badge status-shortlisted">Shortlisted</span></td>
+              </tr>
+              <tr>
+                <td>Apex Capital</td>
+                <td>Financial Analyst</td>
+                <td>18 Jul 2026</td>
+                <td><span class="status-badge status-applied">Applied</span></td>
+              </tr>
+              <tr>
+                <td>Rivet AI</td>
+                <td>Machine Learning Engineer</td>
+                <td>20 Jul 2026</td>
+                <td><span class="status-badge status-rejected">Rejected</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

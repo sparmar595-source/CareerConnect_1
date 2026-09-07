@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employer Dashboard | CareerConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-shell">
+      <aside class="dashboard-sidebar">
+        <a href="index.html" class="brand" aria-label="CareerConnect home">
+          <span class="brand-mark">C</span>
+          <span>CareerConnect</span>
+        </a>
+
+        <ul class="side-menu">
+          <li><a class="active" href="dashboard-employer.html"><i class="fa-solid fa-table-columns"></i> Overview</a></li>
+          <li><a href="#"><i class="fa-solid fa-briefcase"></i> My Jobs</a></li>
+          <li><a href="#"><i class="fa-solid fa-users"></i> Candidates</a></li>
+          <li><a href="#"><i class="fa-solid fa-chart-simple"></i> Analytics</a></li>
+          <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+          <li><a href="index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</a></li>
+        </ul>
+      </aside>
+
+      <main class="dashboard-main">
+        <div class="topbar">
+          <h1>Employer Dashboard</h1>
+          <button class="btn btn-primary post-job-btn" type="button"><i class="fa-solid fa-plus"></i> Post a Job</button>
+        </div>
+
+        <section class="stats-grid">
+          <article class="stat-card">
+            <div class="meta">
+              <span>Active Posts</span>
+              <i class="fa-solid fa-briefcase" style="color: var(--primary-500);"></i>
+            </div>
+            <strong>18</strong>
+            <small>+3 this month</small>
+          </article>
+
+          <article class="stat-card">
+            <div class="meta">
+              <span>Total Applicants</span>
+              <i class="fa-solid fa-users" style="color: var(--teal-600);"></i>
+            </div>
+            <strong>1,286</strong>
+            <small>+118 this week</small>
+          </article>
+
+          <article class="stat-card">
+            <div class="meta">
+              <span>New This Week</span>
+              <i class="fa-solid fa-arrow-trend-up" style="color: var(--success);"></i>
+            </div>
+            <strong>42</strong>
+            <small>+14% vs last week</small>
+          </article>
+        </section>
+
+        <section class="table-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Job Title</th>
+                <th>Category</th>
+                <th>Applicants</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Senior Product Designer</td>
+                <td>Design</td>
+                <td>142</td>
+                <td><span class="status-badge status-selected">Active</span></td>
+              </tr>
+              <tr>
+                <td>Frontend Engineer</td>
+                <td>IT & Software</td>
+                <td>186</td>
+                <td><span class="status-badge status-shortlisted">Reviewing</span></td>
+              </tr>
+              <tr>
+                <td>Marketing Coordinator</td>
+                <td>Marketing</td>
+                <td>98</td>
+                <td><span class="status-badge status-applied">Open</span></td>
+              </tr>
+              <tr>
+                <td>Financial Analyst</td>
+                <td>Finance</td>
+                <td>74</td>
+                <td><span class="status-badge status-interview">Interviewing</span></td>
+              </tr>
+              <tr>
+                <td>Data Analyst</td>
+                <td>IT & Software</td>
+                <td>63</td>
+                <td><span class="status-badge status-selected">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

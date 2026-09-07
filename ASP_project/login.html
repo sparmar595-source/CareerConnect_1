@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | CareerConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-shell">
+      <header class="auth-header">
+        <a href="index.html" class="brand" aria-label="CareerConnect home">
+          <span class="brand-mark">C</span>
+          <span>CareerConnect</span>
+        </a>
+        <h1>Welcome back</h1>
+        <p>Log in to continue your job search.</p>
+      </header>
+
+      <div class="auth-tabs" aria-label="Account type tabs">
+        <button class="tab-btn active" type="button">Student</button>
+        <button class="tab-btn" type="button">Employer</button>
+      </div>
+
+      <form class="auth-form">
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="login-email">Email address</label>
+            <input id="login-email" type="email" placeholder="name@example.com" />
+          </div>
+
+          <div class="form-field">
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" placeholder="Enter your password" />
+          </div>
+
+          <div class="form-inline">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button class="btn btn-primary auth-submit" type="submit">Login</button>
+
+          <p style="text-align: center; margin: 0; color: var(--text-500);">
+            Don’t have an account? <a href="signup.html" style="color: var(--primary-700); font-weight: 700;">Create one</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
