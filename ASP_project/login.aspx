@@ -418,7 +418,7 @@
 <%--          <button class="btn btn-primary auth-submit" type="submit">Login</button>--%>
 
           <p style="text-align: center; margin: 0; color: var(--text-500);">
-            Don’t have an account? <a href="signup.html" style="color: var(--primary-700); font-weight: 700;">Create one</a>
+            Don’t have an <a href="signup.html" style="color: var(--primary-700); font-weight: 700;">Create one</a>
           </p>
         </div>
       </form>
